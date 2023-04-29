@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>723</width>
+    <width>644</width>
     <height>583</height>
    </rect>
   </property>
@@ -41,7 +41,7 @@
      <rect>
       <x>0</x>
       <y>120</y>
-      <width>645</width>
+      <width>650</width>
       <height>391</height>
      </rect>
     </property>
@@ -55,9 +55,28 @@
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(22, 33, 62);
+     <string notr="true">QTabWidget::pane{ /* The tab widget frame */
+    border-top: -1px ;
+	border-left: 1px solid lightgray; 
+	border-right: 1px solid lightgray; 
+	border-bottom: 1px solid lightgray; 
+}
+QWidget {
+   background: rgb(22, 33, 62);
+}
+QTabBar::tab {
+background: rgb(22, 33, 62);
+color: rgb(255, 255, 255);   
+	border: 0.5px solid lightgray ;
 
-selection-background-color: rgb(15, 52, 96);</string>
+  padding: 5px;
+} 
+
+QTabBar::tab:selected { 
+  background:rgb(15, 52, 96); 
+color: rgb(255, 255, 255);
+  margin-bottom: -1px; 
+}</string>
     </property>
     <property name="currentIndex">
      <number>0</number>
@@ -299,6 +318,40 @@ color: rgb(255, 255, 255);</string>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_66">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>280</y>
+        <width>136</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Poppins</family>
+        <pointsize>11</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Login . Success !!</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </widget>
@@ -4827,7 +4880,7 @@ background-color: rgb(15, 52, 96);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>723</width>
+     <width>644</width>
      <height>27</height>
     </rect>
    </property>
@@ -4840,11 +4893,24 @@ background-color: rgb(15, 52, 96);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(26, 26, 46);
+    <string notr="true">QMenu {
+background-color: rgb(26, 26, 46);
 gridline-color: rgb(15, 52, 96);
 selection-background-color: rgb(15, 52, 96);
 color: rgb(255, 255, 255);
-font: 500 11pt &quot;Poppins&quot;;</string>
+font: 500 11pt &quot;Poppins&quot;;
+}
+
+QMenuBar {
+    background-color: rgb(26, 26, 46);
+	selection-background-color: rgb(15, 52, 96);
+	color: rgb(255, 255, 255);
+    spacing: 3px; /* spacing between menu bar items */
+}
+QMenuBar::item:selected { /* when selected using mouse or keyboard */
+    background: rgb(15, 52, 96);
+	color: rgb(255, 255, 255);
+}</string>
    </property>
    <widget class="QMenu" name="menu_01">
     <property name="title">
