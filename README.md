@@ -1,5 +1,6 @@
 # School Management Software
 
+> **Note**
 > Work In Progress (WIP)
 
 This project is a complete school management software that has been developed using Python, PyQt6, Qt Designer, and MySQL.
