@@ -1,6 +1,6 @@
 # School Management Software
 
-![SCHOOL MANAGEMENT SYSTEM](<.\media\SCHOOL MANAGEMENT SYSTEM.png>)
+![SCHOOL MANAGEMENT SYSTEM](./media/header.png)
 
 This project is a CRUD school management system application that has been developed using Python, PyQt6, Qt Designer, and MySQL.
 
